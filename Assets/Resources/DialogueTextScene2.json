@@ -103,7 +103,21 @@
                     "Text": "Drag her with you",
                     "TargetDialog": "Scene2_DragJunoWithYou"
                 }
-            ]
+            ],
+			"MessageSprites":{
+				"PathToSprite":[
+					"JunoSprites/Juno-Happy"
+				],
+				"Enter":[
+					true
+				],
+				"Exit":[
+					false
+				],
+				"Side":[
+					-1
+				]
+			}
         },
 		{
 			"ID": "Scene2_CallJunoAgain",

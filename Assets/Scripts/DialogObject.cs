@@ -8,4 +8,5 @@ public class DialogObject
 	public string[] Messages;
     //public string[] JunoSprites;
     public List<DialogChoice> Choices;
+	public MessageSprites MessageSprites;
 }

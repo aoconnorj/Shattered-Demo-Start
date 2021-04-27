@@ -14,6 +14,11 @@ public class DialogController : MonoBehaviour
 	[SerializeField] private Button choice1;
 	[SerializeField] private Button choice2;
 
+	[Header("Message Images")]
+	[SerializeField] private Image LeftImage;
+	[SerializeField] private Image CenterImage;
+	[SerializeField] private Image RightImage;
+
 	private DialogObject currentDialog;
 	private int currentMessage = 0;
     private int currentName = 0;
@@ -64,6 +69,24 @@ public class DialogController : MonoBehaviour
 			currentDialog = newDialog;
 			nameText.text = currentDialog.Names[currentName];
 			messageText.text = currentDialog.Messages[currentMessage];
+
+			//Message Images
+			if(currentDialog.MessageSprites.PathToSprite.Length == 0)
+			{
+				LeftImage.enabled = false;
+				CenterImage.enabled = false;
+				RightImage.enabled = false;
+			}
+			else if (currentDialog.MessageSprites.PathToSprite.Length == 1) // 1 character
+			{
+				LeftImage.enabled = false;
+				CenterImage.enabled = true;
+				RightImage.enabled = false;
+				CenterImage.sprite = Resources.Load<Sprite>(currentDialog.MessageSprites.PathToSprite[currentMessage]);
+			}
+
+
+
             choice1.gameObject.SetActive(false);
 			choice2.gameObject.SetActive(false);
 			if(currentDialog.Messages.Length == 1)
