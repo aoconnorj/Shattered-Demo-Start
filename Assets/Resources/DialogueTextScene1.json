@@ -1,0 +1,161 @@
+{
+	"Dialogs": [
+        {
+			"ID": "Scene1_Intro",
+			"Names": [
+				"Citizen A",
+				" ",
+				"Citizen A",
+				" ",
+				"Nova",
+				" ",
+				" ",
+				"Citizen A",
+				"Citizen B",
+				"Citizen C",
+				"Nova",
+				"Citizen D",
+				"Citizen E",
+				"Nova",
+				"Citizen C",
+				"Nova",
+				"Citizen D",
+				"Citizen C",
+				"Citizen B",
+				"Citizen E",
+				"Nova",
+				"Citizen A",
+				"Citizen C",
+				"Citizen B",
+				"Citizen E",
+				"Citizen D",
+				" ",
+				"Nova",
+				"Citizen A",
+				" ",
+				"Citizens",
+				"Citizen A",
+				" ",
+				"Citizen B",
+				" ",
+				"Citizen C",
+				" ",
+				"Citizen D",
+				" ",
+				"Citizen E",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				" "
+			],
+            "Messages": [
+				"H– Hello? I’m calling to report a crack in the wall...",
+				"It started slowly, a week after my brother– the authorities left for the surface.",
+				"There was a small crack, a crack in the glass. It’s small, but I thought I should say something. Should I be worried?",
+				"A worried call. A written complaint here or there.",
+				"No, of course not ma’am. We’ve increased security and will send our engineers out to the reported location immediately.",
+				"And we did. We investigated each weak spot, fixed every possible weak spot we could find…",
+				"But the calls only became more numerous, more frantic, more alarming.",
+				"There’s another crack!",
+				"I saw shadows... Shadows of something outside– outside of the city.",
+				"My children were scared to death! It’s probably just their active imagination, but could you please just check to make sure?",
+				"Of course, we’ll get right on that, sir. Please, don’t–",
+				"Thumping. There was thumping? Off and on, all night.",
+				"I heard rumors about a crack in the barrier, can any officials confirm this?",
+				"Unfortunately, I can’t disclose any private reports to the press at this–",
+				"Sorry, it’s me again. I’m just a little bit worried. My kids came back to me again, terrified. You already checked the city perimeter, right?",
+				"Yes, we’re doing checks of the perimeter twice a day, and we’ll be–",
+				"Thumping, louder, more intense this time.",
+				"Thumping, this time it was thumping.",
+				"I’m afraid to go out at night. I feel like something’s watching me.",
+				"Why is no one giving us answers? Don’t you have answers?!",
+				"I realize how concerning this situation may be, but I assure you, everything is–",
+				"It’s cracking! It keeps cracking!",
+				"I’m sorry I keep calling and–",
+				"It must seem like I’m overreacting, Zale is one of the safest underwater cities in the world, but I just can’t help it because–",
+				"I know something is going on! If you would just give us an answer, I’m sure we wouldn’t be so–",
+				"Worried. I’m so worried, about the noises, about all of this! And I know you’re not supposed to tell us to leave, but I have relatives on the surface that–",
+				"My job right now is to keep everything under control, just until they get back... until he gets back, I can do that.",
+				"Everything is under control. We’re handling each issue as efficiently as we can, there is absolutely nothing to worry about, and–",
+				"There’s a leak, it’s leaking!",
+				"What?",
+				"A leak! It started leaking this morning and I panicked so I called and called. I thought it was fixed, but now there’s a new leak. I don’t understand, how did this even happen? It’s fixable, right?  We need answers!",
+				"I know...",
+				"A leak?! It has to be something outside the city! They told us we were alone out here, but we aren’t, are we? The shadows and the menacing feeling I got at night… The shadows, the shadows– What the hell is out there?! We need answers!",
+				"I know...",
+				"A leak? It’s leaking? I need to get out of here! My children aren’t getting stuck in a self-destructing city. I’m not letting my family drown in this hell hole! You have to let us go, at least back to the surface! We need answers!",
+				"I know...",
+				"A leak… Wait, was that what’s been going on?! This thumping? These unbearable nights? Is something attacking us?! The thumping, the constant thumping, I’m going insane down here! We need answers!",
+				"I KNOW–",
+				"A leak, of course, it’s leaking! You said you were doing something, but every single complaint, every single concern has been brushed off, hasn’t it?? Answer us! Please, just give us something to hold onto. We need answers!",
+				"*Click*",
+				"I slammed the phone down on the desk and backed away from my work.",
+				"It was silent. The only things keeping me tied to reality were the growing list of missed call notifications on my screen and my own rampaging thoughts.",
+				"What was I doing as one of the fill-in leaders of a city more than 10,000 feet below sea level?",
+				"I need to clear my head. I can’t take calls like this.",
+				"I need Juno, or Claude… Anyone who wasn’t going to bombard me with questions I don’t have answers to.",
+				"*Ring*",
+				"On my CELLPHONE now?!",
+				"…",
+				"Do I walk and talk? Or just let them leave a voicemail?"
+			],
+            "Choices": [
+                {
+                    "Text": "Answer the call",
+                    "TargetDialog": "Scene1_AnswerTheCall"
+                },
+                {
+                    "Text": "Decline the call",
+                    "TargetDialog": "Scene1_DeclineTheCall"
+                }
+            ]
+        },
+		{
+			"ID": "Scene1_AnswerTheCall",
+			"Names": [
+				" ",
+				" ",
+				" "
+			],
+            "Messages": [
+				"I probably should answer this now, it could be important…",
+				"Yeah, we’re in a crisis. I can’t be slacking off right now, no matter how stressed out I may be.",
+				"*Beep*",
+				"I answered the call, braced myself for the barrage of worries, and headed to the security office."
+			],
+            "Choices": [
+                {
+                    "Text": "Head to the Security Office",
+                    "TargetDialog": "GotoScene1"
+                }
+            ]
+        },
+		{
+			"ID": "Scene1_DeclineTheCall",
+			"Names": [
+				" ",
+				" ",
+				" ",
+				" "
+			],
+            "Messages": [
+				"I probably should answer this now, it could be important…",
+				"But I’m sure it can wait until I check in with Juno and Claude. Not to mention how stressed out I am, I wouldn’t be much help right now anyways.",
+				"*Beep*",
+				"I put my phone on silent, took a deep breath, and headed to the security office."
+			],
+            "Choices": [
+                {
+                    "Text": "Head to the Security Office",
+                    "TargetDialog": "GotoScene1"
+                }
+            ]
+        }
+	]
+}

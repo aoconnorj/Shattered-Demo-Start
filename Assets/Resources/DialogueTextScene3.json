@@ -1,0 +1,94 @@
+{
+	"Dialogs": [
+        {
+			"ID": "Scene3_Claude_Intro",
+			"Names": [
+				" ",
+				"Juno",
+				"Nova",
+				" ",
+				"Nova",
+				" ",
+				" ",
+				" ",
+				" ",
+				"Clawde",
+				"Nova",
+				" ",
+				"Juno",
+				" ",
+				" ",
+				" "
+			],
+            "Messages": [
+				"We headed down the hallway to Claude’s lab, expecting the usual orderly and immaculate room…",
+				"Juno: It’s a mess.",
+				"Uniquely disorganized.",
+				"Refocusing myself, I looked around the lab for any sign of life.",
+				"Claude, you in here??",
+				"I waited a moment, hoping for a movement, or any kind of response.",
+				"*shuffle shuffle*",
+				"Huh?",
+				"A small gray and white cat wandered out from behind some boxes before sitting right in front of us, tilting his head, and just staring.",
+				"*meow*",
+				"Oh, hello Clawde! It’s been quite a while since I’ve seen you.",
+				"I picked Clawde up and placed him in Juno’s lap as she sat on the couch near the entrance.",
+				"Hello Clawde! Have you seen Claude?",
+				"Clawde, not to be confused with Claude, was Claude’s cat.",
+				"If Clawde was here, there was a good chance that Claude was also here… Somewhere beneath these endless piles of work and experiments.",
+				"Well, we could just wait, but we’re also in a bit of a hurry. What’s the easiest solution?"
+
+			],
+            "Choices": [
+                {
+                    "Text": "Lure him out",
+                    "TargetDialog": "Scene3_LureClaudeOut"
+                },
+                {
+                    "Text": "Wait for him",
+                    "TargetDialog": "Scene3_WaitForHim"
+                }
+            ]
+        },
+		{
+			"ID": "Scene3_LureClaudeOut",
+			"Names": [
+				" ",
+				" ",
+				"Nova",
+				" ",
+				" ",
+				"Claude",
+				"Claude"
+			],
+            "Messages": [
+				"Well, if there’s one thing I know I can count on, it’s Claude’s ego… and his cat.",
+				"I raised my voice, just enough to fill the room, and turned to Juno.",
+				"I can’t believe Claude literally named his cat Clawde… Actually, I take it back, that’s definitely something he would do. He’s an egotistical, little–",
+				"Before I could get even halfway through my playful insult, I saw a wrench fly past my face and hit the wall behind me.",
+				"Right on cue.",
+				"Sorry, my hand slipped.",
+				"I think you were in the middle of saying something about a genius, multi-talented, engineering prodigy? With an adorable cat named Clawde."
+			]
+        },
+		{
+			"ID": "Scene3_WaitForHim",
+			"Names": [
+				" ",
+				" ",
+				" ",
+				"Juno",
+				"Claude",
+				" "
+			],
+            "Messages": [
+				"I walked back over to Juno and took a seat next to her and Clawde.",
+				"If Claude was busy, we might as well let him finish up. He’ll show up when he’s ready.",
+				"After a few minutes of waiting and pampering Clawde, we heard footsteps approach us from the corner of the lab.",
+				"Took ya long enough.",
+				"Oh, I’m sorry, Juno. Are you the genius, multi-talented, engineering prodigy here? No? Didn’t think so.",
+				"Juno and Claude locked eyes, scowling at each other."
+			]
+        }
+	]
+}

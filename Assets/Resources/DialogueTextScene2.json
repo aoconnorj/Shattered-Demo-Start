@@ -1,0 +1,161 @@
+{
+	"Dialogs": [
+        {
+			"ID": "Scene2_Juno_Intro",
+			"Names": [
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				"Nova", 
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Nova",
+				"Juno",
+				" ",
+				"Juno",
+				" ",
+				" ",
+				" ",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno", 
+				"Nova", 
+				"Juno",
+				"Nova",
+				" ",
+				"Juno",
+				"Nova",
+				" ",
+				" ",
+				" ",
+				" ",
+				" ",
+				"Nova",
+				" ",
+				"Nova",
+				"Juno",
+				" ",
+				" "
+			],
+            "Messages": [
+				"Finally, done with all of the calls...",
+				"...",
+				"I’ve been completely panicked all morning, and Juno’s playing GAMES??",
+				"You’d really never be able to guess how much power this woman holds.",
+				"Has she even noticed me yet? Probably not.",
+				"Juno! What the hell?! ",
+				"Huh?",
+				"Do you even know what kind of crisis we’re going through right now?",
+				"It’s almost lunchtime and we have no sandwiches?",
+				"Jeez…",
+				"Juno, you know you’re supposed to be head of security while Bianca’s away, right?",
+				"Yeah, something like that I guess.",
+				"She shrugged, nonchalantly as always.",
+				"Look Nova, I already sent out several scientists and more than doubled our outer layers of security. There’s not much else we can do.",
+				"I pulled over an extra office chair and took a seat.",
+				"She was right. As out of control as the situation felt, we really had been doing everything we could to keep things in order.",
+				"Even so, the stakes are continuing to stack, I’d be lying if I said I wasn’t worried.",
+				"People are panicking Juno, and they have a right to be. We’re all terrified. There are civilians waiting for an answer that we can’t give.",
+				"Yup.",
+				"I’ve been getting nonstop calls all morning!",
+				"Yup.",
+				"People are practically rioting, even though our hands are tied.",
+				"It’s a mess.",
+				"And we’re basically stuck down here with some unknown creature stalking us.",
+				"It really does suck being in the dark about these things.",
+				"Not to mention we’re backed into a corner.",
+				"Man, we are so screwed.",
+				"Screwed is a massive understatement.",
+				"…",
+				"…",
+				"Looking at each other, in such a seemingly hopeless situation, we couldn’t help but crack a smile.",
+				"Hahaha!",
+				"Ahaha!",
+				"We sat in our seats, laughing at ourselves, and enjoying the momentary drop in tension.",
+				"I had been so busy lately, so caught up in my head, that I had forgotten what it was like to laugh with Juno.",
+				"Despite her cheeky comments and carefree nature, Juno’s charisma and insight were unmatched. Her laughter was contagious, and she always knew when you needed it.",
+				"I honestly don’t know what I would do without her. Especially down here.",
+				"This is still a crisis though, we need to regroup and figure out how to hold things together until the actual authorities get back to the city.",
+				"Okay, time to go find Claude.",
+				"I turned to leave before quickly realizing there was no one following me.",
+				"WITH the head of security, Juno.",
+				"…",
+				"She went back to her music, didn’t she?",
+				"…Yup."
+			],
+            "Choices": [
+                {
+                    "Text": "Call her again",
+                    "TargetDialog": "Scene2_CallJunoAgain"
+                },
+                {
+                    "Text": "Drag her with you",
+                    "TargetDialog": "Scene2_DragJunoWithYou"
+                }
+            ]
+        },
+		{
+			"ID": "Scene2_CallJunoAgain",
+			"Names": [
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova"
+			],
+            "Messages": [
+				"Juno!",
+				"...",
+				"JUNO!!",
+				"Gah! Huh?!",
+				"We’re going to find Claude!",
+				"During our lunch breaaaaaak?",
+				"YES!"
+			],
+			"Choices": [
+                {
+                    "Text": "Find Claude",
+                    "TargetDialog": "GotoScene2"
+				}
+            ]
+        },
+		{
+			"ID": "Scene2_DragJunoWithYou",
+			"Names": [
+				" ",
+				" ",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova"
+			],
+            "Messages": [
+				"Well, good thing these chairs have wheels.",
+				"I walked back over and gave Juno one more minute to realize I was waiting for her, before grabbing the back of her chair and pulling her down the hallway with me.",
+				"Gah! Huh?!",
+				"We’re going to find Claude!",
+				"During our lunch breaaaaaak?",
+				"YES!"
+			],
+            "Choices": [
+                {
+                    "Text": "Find Claude",
+                    "TargetDialog": "GotoScene2"
+				}
+            ]
+        }
+	]
+}
