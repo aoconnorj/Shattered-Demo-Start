@@ -7,5 +7,14 @@ public class DialogObject
 	public string[] Names;
 	public string[] Messages;
     public List<DialogChoice> Choices;
-	public MessageSprites MessageSprites;
 }
+/*
+"Juno_JunoSprites/Juno-Happy_enterLeft" -> Split('_')
+
+[
+"Juno",
+"JunoSprites/Juno-Happy",
+"enterLeft"
+]
+
+*/

@@ -3,20 +3,20 @@
         {
 			"ID": "Scene2_Juno_Intro",
 			"Names": [
-				" ",
+				" _JunoSprites/Juno-Laugh_center",
 				" ",
 				" ",
 				" ",
 				" ",
 				"Nova", 
-				"Juno",
+				"Juno_JunoSprites/Juno-Happy_center",
 				"Nova",
-				"Juno",
+				"Juno_JunoSprites/Juno-Laugh_center&Claude_ClaudeSprites/Claude-Angry1_enterleft",
 				"Nova",
 				"Nova",
-				"Juno",
+				"Juno_JunoSprites/Juno-Laugh_center&Claude_ClaudeSprites/Claude-Angry1_left&Clawde_ClawdeSprites/Clawde-ClosedEyes_enterright",
 				" ",
-				"Juno",
+				"#Juno_JunoSprites/Juno-Laugh_center&Claude_ClaudeSprites/Claude-Angry1_exitleft",
 				" ",
 				" ",
 				" ",
@@ -103,21 +103,7 @@
                     "Text": "Drag her with you",
                     "TargetDialog": "Scene2_DragJunoWithYou"
                 }
-            ],
-			"MessageSprites":{
-				"PathToSprite":[
-					"JunoSprites/Juno-Happy"
-				],
-				"Enter":[
-					true
-				],
-				"Exit":[
-					false
-				],
-				"Side":[
-					-1
-				]
-			}
+            ]
         },
 		{
 			"ID": "Scene2_CallJunoAgain",

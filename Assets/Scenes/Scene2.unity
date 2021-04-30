@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 477581619}
   - component: {fileID: 477581621}
   - component: {fileID: 477581620}
+  - component: {fileID: 477581622}
   m_Layer: 5
   m_Name: Left Message Image
   m_TagString: Untagged
@@ -395,6 +396,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477581618}
   m_CullTransparentMesh: 0
+--- !u!95 &477581622
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477581618}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45fe90e04b670ca41818e9c7146792c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &641959097
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +451,10 @@ MonoBehaviour:
   messageText: {fileID: 1519773612}
   nameText: {fileID: 1556660795}
   choice1: {fileID: 1163132624}
-  choice2: {fileID: 0}
+  choice2: {fileID: 1054709335}
+  LeftImage: {fileID: 477581620}
+  CenterImage: {fileID: 657220580}
+  RightImage: {fileID: 1727645067}
 --- !u!4 &641959099
 Transform:
   m_ObjectHideFlags: 0

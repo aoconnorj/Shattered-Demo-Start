@@ -14,16 +14,14 @@ public class DialogController : MonoBehaviour
 	[SerializeField] private Button choice1;
 	[SerializeField] private Button choice2;
 
-	/*[Header("Message Images")]
+	[Header("Message Images")]
 	[SerializeField] private Image LeftImage;
 	[SerializeField] private Image CenterImage;
-	[SerializeField] private Image RightImage;*/
+	[SerializeField] private Image RightImage;
 
 	private DialogObject currentDialog;
 	private int currentMessage = 0;
     private int currentName = 0;
-    //public Image Juno;
-    //private int currentSpriteName = 0;
 
     private void Start()
 	{
@@ -65,27 +63,11 @@ public class DialogController : MonoBehaviour
 			currentMessage = 0;
             currentName = 0;
 			currentDialog = newDialog;
-			nameText.text = currentDialog.Names[currentName];
-			messageText.text = currentDialog.Messages[currentMessage];
-
-			//Message Images
-			/*if(currentDialog.MessageSprites.PathToSprite.Length == 0)
-			{
-				LeftImage.enabled = false;
-				CenterImage.enabled = false;
-				RightImage.enabled = false;
-			}
-			else if (currentDialog.MessageSprites.PathToSprite.Length == 1) // 1 character
-			{
-				LeftImage.enabled = false;
-				CenterImage.enabled = true;
-				RightImage.enabled = false;
-				CenterImage.sprite = Resources.Load<Sprite>(currentDialog.MessageSprites.PathToSprite[currentMessage]);
-			}*/
-
-
-
-            choice1.gameObject.SetActive(false);
+			UpdateNameAndMessage();
+			UpdateImages();
+			
+			
+			choice1.gameObject.SetActive(false);
 			choice2.gameObject.SetActive(false);
 			if(currentDialog.Messages.Length == 1)
 			{
@@ -100,9 +82,10 @@ public class DialogController : MonoBehaviour
 
 	private void UpdateMessage()
 	{
-        nameText.text = currentDialog.Names[currentName];
-        messageText.text = currentDialog.Messages[currentMessage];
-		if(currentMessage == currentDialog.Messages.Length - 1) //Last message
+		UpdateNameAndMessage();
+		UpdateImages();		
+
+		if (currentMessage == currentDialog.Messages.Length - 1) //Last message
 		{
             if (currentDialog.Choices.Count > 0)
 			{
@@ -120,6 +103,81 @@ public class DialogController : MonoBehaviour
 			{
 				choice2.gameObject.SetActive(true);
 				choice2.GetComponentInChildren<TMP_Text>().text = currentDialog.Choices[1].Text;
+			}
+		}
+	}
+
+	private void UpdateNameAndMessage()
+	{
+		nameText.text = currentDialog.Names[currentName].Split('_')[0].Replace("#","");
+		messageText.text = currentDialog.Messages[currentMessage];
+
+		//Check names
+		if (currentDialog.Names[currentName].StartsWith(" "))
+		{
+			messageText.text = "<i><color=green>" + messageText.text + "</color></i>";
+		}
+	}
+
+	private void UpdateImages()
+	{
+		/*
+		 Parse the string in the current 'name' for multiple characters, their names, sprite paths, positions and movement.
+		 */
+		if (currentDialog.Names[currentName].Contains("#")) //# denotes we should clear the sprites this update.
+		{
+			LeftImage.enabled = false;
+			CenterImage.enabled = false;
+			RightImage.enabled = false;
+		}
+
+		//Message Images
+		string[] characters = new string[] { currentDialog.Names[currentName] };
+		if (characters[0].Contains("&"))
+		{
+			characters = characters[0].Split('&');
+		}
+		foreach(string character in characters)
+		{
+			string[] parsedChar = character.Split('_');
+			if (parsedChar.Length == 0)
+			{
+				LeftImage.enabled = false;
+				CenterImage.enabled = false;
+				RightImage.enabled = false;
+			}
+			else if (parsedChar.Length > 1) // We have a character name and a path to a sprite.
+			{
+				string position = parsedChar[2];
+
+				if (position.Contains("left"))
+				{
+					LeftImage.enabled = true;
+					LeftImage.sprite = Resources.Load<Sprite>(parsedChar[1]);
+
+					if (position.Contains("enter"))
+					{
+						LeftImage.GetComponent<Animator>().Play("Enter");
+					}
+					else if (position.Contains("exit"))
+					{
+						LeftImage.GetComponent<Animator>().Play("Exit");
+					}
+					else
+					{
+						LeftImage.GetComponent<Animator>().StopPlayback();
+					}
+				}
+				else if (position.Contains("center"))
+				{
+					CenterImage.enabled = true;
+					CenterImage.sprite = Resources.Load<Sprite>(parsedChar[1]);
+				}
+				else if (position.Contains("right"))
+				{
+					RightImage.enabled = true;
+					RightImage.sprite = Resources.Load<Sprite>(parsedChar[1]);
+				}
 			}
 		}
 	}
