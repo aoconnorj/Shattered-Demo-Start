@@ -14,10 +14,10 @@ public class DialogController : MonoBehaviour
 	[SerializeField] private Button choice1;
 	[SerializeField] private Button choice2;
 
-	[Header("Message Images")]
+	/*[Header("Message Images")]
 	[SerializeField] private Image LeftImage;
 	[SerializeField] private Image CenterImage;
-	[SerializeField] private Image RightImage;
+	[SerializeField] private Image RightImage;*/
 
 	private DialogObject currentDialog;
 	private int currentMessage = 0;
@@ -47,7 +47,6 @@ public class DialogController : MonoBehaviour
 			currentMessage++;
             currentName++;
             UpdateMessage();
-            //Juno.sprite = Resources.Load<Sprite>("Resources/JunoSprites/" + currentDialog.JunoSprites[currentSpriteName]);
         }
 	}
 
@@ -65,13 +64,12 @@ public class DialogController : MonoBehaviour
 		{
 			currentMessage = 0;
             currentName = 0;
-            //currentSpriteName = 0;
 			currentDialog = newDialog;
 			nameText.text = currentDialog.Names[currentName];
 			messageText.text = currentDialog.Messages[currentMessage];
 
 			//Message Images
-			if(currentDialog.MessageSprites.PathToSprite.Length == 0)
+			/*if(currentDialog.MessageSprites.PathToSprite.Length == 0)
 			{
 				LeftImage.enabled = false;
 				CenterImage.enabled = false;
@@ -83,7 +81,7 @@ public class DialogController : MonoBehaviour
 				CenterImage.enabled = true;
 				RightImage.enabled = false;
 				CenterImage.sprite = Resources.Load<Sprite>(currentDialog.MessageSprites.PathToSprite[currentMessage]);
-			}
+			}*/
 
 
 
@@ -106,10 +104,17 @@ public class DialogController : MonoBehaviour
         messageText.text = currentDialog.Messages[currentMessage];
 		if(currentMessage == currentDialog.Messages.Length - 1) //Last message
 		{
-			if (currentDialog.Choices.Count > 0)
+            if (currentDialog.Choices.Count > 0)
 			{
-				choice1.gameObject.SetActive(true);
-				choice1.GetComponentInChildren<TMP_Text>().text = currentDialog.Choices[0].Text;
+                if (currentDialog.Choices[0].Text == "Continue")
+                {
+                    ShowDialog(currentDialog.Choices[0].TargetDialog);
+                } else
+                {
+                    choice1.gameObject.SetActive(true);
+                    choice1.GetComponentInChildren<TMP_Text>().text = currentDialog.Choices[0].Text;
+                }
+				
 			}
 			if (currentDialog.Choices.Count > 1)
 			{
@@ -118,10 +123,6 @@ public class DialogController : MonoBehaviour
 			}
 		}
 	}
-    /*public void UpdateJuno(int JunoSprites)
-    {
-        Juno.sprite = Resources.Load<Sprite>("Resources/JunoSprites" + currentSpriteName);
-    }*/
 
     public void ClickChoice(int choice)
 	{

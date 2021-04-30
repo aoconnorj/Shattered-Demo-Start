@@ -121,6 +121,7 @@
 			"Names": [
 				" ",
 				" ",
+				" ",
 				" "
 			],
             "Messages": [
@@ -131,8 +132,8 @@
 			],
             "Choices": [
                 {
-                    "Text": "Head to the Security Office",
-                    "TargetDialog": "GotoScene1"
+                    "Text": "Continue",
+                    "TargetDialog": "GotoScene2"
                 }
             ]
         },
@@ -152,8 +153,8 @@
 			],
             "Choices": [
                 {
-                    "Text": "Head to the Security Office",
-                    "TargetDialog": "GotoScene1"
+                    "Text": "Continue",
+                    "TargetDialog": "GotoScene2"
                 }
             ]
         }

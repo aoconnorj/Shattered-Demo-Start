@@ -141,8 +141,8 @@
 			],
 			"Choices": [
                 {
-                    "Text": "Find Claude",
-                    "TargetDialog": "GotoScene2"
+                    "Text": "Continue",
+                    "TargetDialog": "GotoScene3"
 				}
             ]
         },
@@ -166,8 +166,8 @@
 			],
             "Choices": [
                 {
-                    "Text": "Find Claude",
-                    "TargetDialog": "GotoScene2"
+                    "Text": "Continue",
+                    "TargetDialog": "GotoScene3"
 				}
             ]
         }

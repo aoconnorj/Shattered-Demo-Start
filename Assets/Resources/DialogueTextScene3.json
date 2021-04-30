@@ -22,7 +22,7 @@
 			],
             "Messages": [
 				"We headed down the hallway to Claude’s lab, expecting the usual orderly and immaculate room…",
-				"Juno: It’s a mess.",
+				"It’s a mess.",
 				"Uniquely disorganized.",
 				"Refocusing myself, I looked around the lab for any sign of life.",
 				"Claude, you in here??",
@@ -69,7 +69,13 @@
 				"Right on cue.",
 				"Sorry, my hand slipped.",
 				"I think you were in the middle of saying something about a genius, multi-talented, engineering prodigy? With an adorable cat named Clawde."
-			]
+			],
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "TargetDialog": "Scene3_ClaudeCont"
+                }
+            ]
         },
 		{
 			"ID": "Scene3_WaitForHim",
@@ -88,6 +94,89 @@
 				"Took ya long enough.",
 				"Oh, I’m sorry, Juno. Are you the genius, multi-talented, engineering prodigy here? No? Didn’t think so.",
 				"Juno and Claude locked eyes, scowling at each other."
+			],
+            "Choices": [
+                {
+                    "Text": "Continue",
+                    "TargetDialog": "Scene3_ClaudeCont"
+                }
+            ]
+        },
+		{
+			"ID": "Scene3_ClaudeCont",
+			"Names": [
+				"Nova",
+				"Claude",
+				"Nova",
+				"Juno",
+				"Claude",
+				"Nova",
+				"Juno",
+				"Claude",
+				"Claude",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Juno",
+				"Nova",
+				"Claude",
+				"Juno",
+				"Nova",
+				"Claude",
+				"Nova",
+				"Claude",
+				"Juno",
+				"Claude",
+				" ",
+				"Juno",
+				"Nova",
+				"Juno",
+				" ",
+				"Claude",
+				" ",
+				"Juno",
+				" ",
+				"Juno",
+				" ",
+				" ",
+				" "
+			],
+            "Messages": [
+				"So that’s where you were hiding.",
+				"I wasn’t hiding; I was working.",
+				"What happened to your impeccably spotless lab? Are you feeling sick or something?",
+				"Maybe he sneezed so hard he lost his Type A personality…",
+				"For your information, I’ve been doing my job. Unpaid overtime actually. All of my bots were called out to reinforce the perimeter, so I’ve basically been doing the investigating, fixing, and paperwork for every single leak report, alone.",
+				"Oh, great. The stress is contagious.",
+				"Misery loves company…",
+				"So it seems.", 
+				"Listen, I know it’s supposed to be classified information, but please tell me you’ve gotten in contact with the surface.",
+				"Claude, you know you can’t ask Juno to tell you that–",
+				"I haven’t.",
+				"Wait, we’ve been cut off?",
+				"No. No, no! We weren’t cut off! I just- I haven’t tried yet. I haven’t tried to call them.",
+				"Right… you just- you just haven’t gotten around to it, somehow?",
+				"What do you mean you “haven't tried”? This isn’t the time for petty hesitation, Juno! People could die down here! We could end up dying down here.",
+				"Don’t you think I know that? Believe me, I’m well aware of all the lives dependent on me. This is exactly why I didn’t want to say anything!",
+				"Juno, we’re not mad, just worried and a little bit scared.",
+				"Speak for yourself, Nova! Sure, I’m worried and scared, just like everyone else down here. So obviously, I’m going to be pissed that you’ve been doing what, Juno? Playing games all day?",
+				"No one’s perfect, Claude! It’s not like any of this is easy.",
+				"She doesn’t need to be perfect, but maybe if she’d take her job seriously–",
+				"You think I’m not?",
+				"We wouldn’t be in this mess in the first place.",
+				"Claude and Juno bickered all the time, I was used to their squabble, but this unrest was something different, worryingly so.",
+				"It might not look like it, but I do take my job very seriously. Since you’re simply dying to know, I haven’t contacted the surface because Bianca isn’t there yet. I don’t think any of them made it.", 
+				"Wait, what??",
+				"There’s no signal either. Nothing from my sister. Nothing from your brother, Nova. Nothing from your cousin, Claude.",
+				"A chill air came over the room. There was nothing I could do except stare.",
+				"That could mean anything though.",
+				"Didn’t reach the surface…?",
+				"But what if it doesn’t? What if it means exactly what we all just thought of?",
+				"Then where–?",
+				"So yes, Claude, I have been stalling. I am honestly sorry that I haven’t contacted the surface yet. I should have, days ago. I’m just not looking forward to telling my parents that my sister might be dead.",
+				"We all stood in the lab, frozen from fear, anger, shock… ",
+				"Everything was cold.",
+				"That moment was the longest of my life."
 			]
         }
 	]
